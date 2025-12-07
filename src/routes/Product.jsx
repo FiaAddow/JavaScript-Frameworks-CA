@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import Bids from "../components/bids.jsx";
 import { useCart } from "../contexts/CartContext.jsx";
 
 const API = import.meta.env.VITE_API_URL;
@@ -10,8 +9,6 @@ export default function Product() {
   const { id } = useParams();
   const [product, setProduct] = useState();
   const { addToCart } = useCart();
-
-  console.log(product);
 
   useEffect(() => {
     const fetchData = async () => {
