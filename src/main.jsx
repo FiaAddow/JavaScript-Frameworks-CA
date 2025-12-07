@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./App";
 import Home from "./routes/Home";
-import Contact from "./routes/contact";
+import Contact from "./routes/Contact";
 import Products from "./routes/Products";
 import Product from "./routes/Product";
 import Checkout from "./routes/Checkout";
