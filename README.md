@@ -34,57 +34,68 @@ You can list the tech stack that you've used over here
 
 1. Clone the repo:
 
+### 1. Install Dependencies
 ```bash
-git clone https://github.com/FiaAddow/javascript-frameworks-ca.git
-Install the dependencies:
-
-bash
-Copy code
 npm install
-Create a .env file in the root folder and add:
+```
 
-env
-Copy code
-VITE_API_URL=https://v2.api.noroff.dev/online-shop
+### 2. Set Up Environment
+Create a `.env` file in the root directory:
+```
+VITE_API_URL=https://v2.api.noroff.dev
 VITE_API_KEY=your-api-key-here
-You can get your API key from:
-https://docs.noroff.dev/
+```
+Get your API key from [Noroff API Documentation](https://docs.noroff.dev/).
 
-Running
-Here is where you detail how to run the app.
+### 3. Run the Project
 
-To run the app, run the following commands:
-
-bash
-Copy code
-npm run dev
-To build the project for production:
-
-bash
-Copy code
+```bash
 npm run build
-Contributing
-If you would like to contribute to this project:
+```
+Deploy the `dist/` folder to Netlify or any static hosting service.
+
+### For Testers
+
+1. **Setup**: Follow Quick Start above
+2. **Test User Registration**: Try creating a new account
+3. **Test Login**: Login with registered credentials
+4. **Test Bidding**: Login and place a bid on an active listing
+5. **Test Create Listing**: Go to profile page and create a new auction
+6. **Check Errors**: Try invalid actions like bidding without login
+7. **Mobile Test**: Check responsiveness on mobile devices
+8. **API Errors**: Test behavior when API is unavailable
+
+### Project Structure
+
+- `src/pages/` - Page components (Home, Product, Cart, Checkout Success, Contact)
+- `src/components/` - Reusable UI components
+- `src/layout/` - Layout wrapper (Header + Footer)
+- `src/context/` - Global cart state management
+- `public/` - Static assets
+- `app/` - App router structure
+
+### API
+
+Uses Noroff Online Shop API v2. All requests are handled via environment variables using the base URL and API key.
+
+## Contributing
 
 Fork the repository
 
-Create a new branch
+Create a feature branch
 
-Commit your changes
+Make your changes
 
-Push your changes
+Push your branch
 
 Open a Pull Request
 
-Contact
-You can reach me here:
+## Contact
 
-Email: Farhia.dahir.addow@gmail.com
+If you wish to reach me, you can contact me here:
 
-Live Site: https://js-framework-fia.netlify.app/
+**Email:** Farhia.dahir.addow@gmail.com
 
-License
-This project is for educational purposes as part of the Noroff JavaScript Frameworks Course Assignment.
+## Acknowledgments
 
-Acknowledgments
-Thanks to Noroff for the project brief and to the Noroff API team for documentation and API access.
+Special thanks to Noroff and the Noroff API team for providing clear documentation and access to the Online Shop API.
