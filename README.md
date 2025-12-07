@@ -9,7 +9,6 @@ A React-based online flower shop built for the JavaScript Frameworks Course Assi
 
 This project is a modern e-commerce flower shop that allows users to browse products, search in real time, add items to a shopping cart, and complete a full checkout flow. The application is designed with usability and performance in mind, using reusable React components and a clean, responsive layout.
 
-You can add some bullet points if you'd like to:
 
 - Browse flower products from the Noroff Online Shop API
 - Real-time product search (look-ahead filtering)
@@ -20,7 +19,6 @@ You can add some bullet points if you'd like to:
 
 ## Built With
 
-You can list the tech stack that you've used over here
 
 - [React 19](https://react.dev/)
 - [Vite](https://vitejs.dev/)
